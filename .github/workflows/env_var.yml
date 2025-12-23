@@ -9,8 +9,8 @@ env:
 jobs:
   test:
     env:
-      MONGODB_USERNAME: fernandom4
-      MONGODB_PASSWORD: fernando123*
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
     runs-on: ubuntu-latest
     steps:
       - name: Get Code
