@@ -8,6 +8,7 @@ env:
   MONGO_DB_NAME: content_db
 jobs:
   test:
+    environment: test
     env:
       MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
       MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
